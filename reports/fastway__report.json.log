@@ -1,0 +1,326 @@
+{
+  "feature": {
+    "uri": "feature1.feature",
+    "description": "<剧本描述>",
+    "keyword": "功能",
+    "name": "<剧本名称>",
+    "line": 2,
+    "id": "<剧本名称>",
+    "tags": []
+  }
+}{
+  "scenario": {
+    "uri": "feature1.feature",
+    "id": "<剧本名称>;拖拽操作",
+    "keyword": "场景",
+    "line": 5,
+    "name": "拖拽操作",
+    "tags": [],
+    "type": "scenario",
+    "result": {
+      "duration": 9210,
+      "status": "passed"
+    },
+    "steps": [
+      {
+        "keyword": "Before",
+        "hidden": true,
+        "match": {
+          "location": "support\\hooks.js:8"
+        },
+        "result": {
+          "status": "passed"
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "假如",
+        "line": 6,
+        "name": "浏览到搜索网站 \"https://account.aliyun.com/register/register.htm\"",
+        "match": {
+          "location": "step_definitions\\definitions.js:6"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 5445000000
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "当",
+        "line": 7,
+        "name": "拖拽验证码块至最右边",
+        "match": {
+          "location": "step_definitions\\definitions.js:9"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 3093000000
+        }
+      },
+      {
+        "keyword": "After",
+        "hidden": true,
+        "match": {
+          "location": "support\\hooks.js:12"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 672000000
+        },
+        "embeddings": [
+          {
+            "data": "file://fastway__report/1.png",
+            "mime_type": "image/png"
+          }
+        ]
+      }
+    ]
+  }
+}{
+  "scenario": {
+    "uri": "feature1.feature",
+    "id": "<剧本名称>;处理alert",
+    "keyword": "场景",
+    "line": 9,
+    "name": "处理alert",
+    "tags": [],
+    "type": "scenario",
+    "result": {
+      "duration": 624,
+      "status": "passed"
+    },
+    "steps": [
+      {
+        "keyword": "Before",
+        "hidden": true,
+        "match": {
+          "location": "support\\hooks.js:8"
+        },
+        "result": {
+          "status": "passed"
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "假如",
+        "line": 10,
+        "name": "浏览到搜索网站 \"file:///C:/Users/xmf/Desktop/fastway/features/iframe.html\"",
+        "match": {
+          "location": "step_definitions\\definitions.js:6"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 127000000
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "当",
+        "line": 11,
+        "name": "点击按钮弹出alert窗口",
+        "match": {
+          "location": "step_definitions\\definitions.js:20"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 93000000
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "那么",
+        "line": 12,
+        "name": "点击确定按钮",
+        "match": {
+          "location": "step_definitions\\definitions.js:25"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 7000000
+        }
+      },
+      {
+        "keyword": "After",
+        "hidden": true,
+        "match": {
+          "location": "support\\hooks.js:12"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 397000000
+        },
+        "embeddings": [
+          {
+            "data": "file://fastway__report/2.png",
+            "mime_type": "image/png"
+          }
+        ]
+      }
+    ]
+  }
+}{
+  "scenario": {
+    "uri": "feature1.feature",
+    "id": "<剧本名称>;多个窗口处理",
+    "keyword": "场景",
+    "line": 14,
+    "name": "多个窗口处理",
+    "tags": [],
+    "type": "scenario",
+    "result": {
+      "duration": 3410,
+      "status": "passed"
+    },
+    "steps": [
+      {
+        "keyword": "Before",
+        "hidden": true,
+        "match": {
+          "location": "support\\hooks.js:8"
+        },
+        "result": {
+          "status": "passed"
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "假如",
+        "line": 15,
+        "name": "浏览到搜索网站 \"file:///C:/Users/xmf/Desktop/fastway/features/iframe.html\"",
+        "match": {
+          "location": "step_definitions\\definitions.js:6"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 36000000
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "当",
+        "line": 16,
+        "name": "点击baidu",
+        "match": {
+          "location": "step_definitions\\definitions.js:31"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 119000000
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "那么",
+        "line": 17,
+        "name": "打开新窗口,切换窗口",
+        "match": {
+          "location": "step_definitions\\definitions.js:34"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 12000000
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "* ",
+        "line": 18,
+        "name": "输入\"selenium\"点击搜索",
+        "match": {
+          "location": "step_definitions\\definitions.js:39"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 1739000000
+        }
+      },
+      {
+        "keyword": "After",
+        "hidden": true,
+        "match": {
+          "location": "support\\hooks.js:12"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 1504000000
+        },
+        "embeddings": [
+          {
+            "data": "file://fastway__report/3.png",
+            "mime_type": "image/png"
+          }
+        ]
+      }
+    ]
+  }
+}{
+  "scenario": {
+    "uri": "feature1.feature",
+    "id": "<剧本名称>;日报",
+    "keyword": "场景",
+    "line": 20,
+    "name": "日报",
+    "tags": [],
+    "type": "scenario",
+    "result": {
+      "duration": 22774,
+      "status": "passed"
+    },
+    "steps": [
+      {
+        "keyword": "Before",
+        "hidden": true,
+        "match": {
+          "location": "support\\hooks.js:8"
+        },
+        "result": {
+          "status": "passed"
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "假如",
+        "line": 21,
+        "name": "用户登录到系统",
+        "match": {
+          "location": "step_definitions\\definitions.js:46"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 5270000000
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "当",
+        "line": 22,
+        "name": "在日报填报页面",
+        "match": {
+          "location": "step_definitions\\definitions.js:55"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 16768000000
+        }
+      },
+      {
+        "keyword": "After",
+        "hidden": true,
+        "match": {
+          "location": "support\\hooks.js:12"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 736000000
+        },
+        "embeddings": [
+          {
+            "data": "file://fastway__report/4.png",
+            "mime_type": "image/png"
+          }
+        ]
+      }
+    ]
+  }
+}

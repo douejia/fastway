@@ -1,0 +1,80 @@
+{
+  "feature": {
+    "uri": "feature1.feature",
+    "description": "<剧本描述>",
+    "keyword": "功能",
+    "name": "<剧本名称>",
+    "line": 2,
+    "id": "<剧本名称>",
+    "tags": []
+  }
+}{
+  "scenario": {
+    "uri": "feature1.feature",
+    "id": "<剧本名称>;拖拽操作",
+    "keyword": "场景",
+    "line": 5,
+    "name": "拖拽操作",
+    "tags": [],
+    "type": "scenario",
+    "result": {
+      "duration": 777,
+      "status": "failed",
+      "exception": {
+        "name": "SessionNotCreatedError",
+        "remoteStacktrace": ""
+      }
+    },
+    "steps": [
+      {
+        "keyword": "Before",
+        "hidden": true,
+        "match": {
+          "location": "support\\hooks.js:8"
+        },
+        "result": {
+          "status": "passed",
+          "duration": 2000000
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "假如",
+        "line": 6,
+        "name": "浏览到搜索网站 \"https://account.aliyun.com/register/register.htm\"",
+        "match": {
+          "location": "step_definitions\\definitions.js:6"
+        },
+        "result": {
+          "status": "failed",
+          "duration": 773000000,
+          "error_message": "SessionNotCreatedError: No matching capability sets found.\nUnable to match capability set 0: browserName must be 'internet explorer', but was 'ie'\n    at Object.throwDecodedError (C:\\Users\\xmf\\Desktop\\fastway\\node_modules\\_selenium-webdriver@4.0.0-alpha.1@selenium-webdriver\\lib\\error.js:550:15)\n    at parseHttpResponse (C:\\Users\\xmf\\Desktop\\fastway\\node_modules\\_selenium-webdriver@4.0.0-alpha.1@selenium-webdriver\\lib\\http.js:542:13)\n    at Executor.execute (C:\\Users\\xmf\\Desktop\\fastway\\node_modules\\_selenium-webdriver@4.0.0-alpha.1@selenium-webdriver\\lib\\http.js:468:26)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
+        }
+      },
+      {
+        "arguments": [],
+        "keyword": "当",
+        "line": 7,
+        "name": "拖拽验证码块至最右边",
+        "match": {
+          "location": "step_definitions\\definitions.js:9"
+        },
+        "result": {
+          "status": "skipped"
+        }
+      },
+      {
+        "keyword": "After",
+        "hidden": true,
+        "match": {
+          "location": "support\\hooks.js:12"
+        },
+        "result": {
+          "status": "failed",
+          "duration": 2000000,
+          "error_message": "SessionNotCreatedError: No matching capability sets found.\nUnable to match capability set 0: browserName must be 'internet explorer', but was 'ie'\n    at Object.throwDecodedError (C:\\Users\\xmf\\Desktop\\fastway\\node_modules\\_selenium-webdriver@4.0.0-alpha.1@selenium-webdriver\\lib\\error.js:550:15)\n    at parseHttpResponse (C:\\Users\\xmf\\Desktop\\fastway\\node_modules\\_selenium-webdriver@4.0.0-alpha.1@selenium-webdriver\\lib\\http.js:542:13)\n    at Executor.execute (C:\\Users\\xmf\\Desktop\\fastway\\node_modules\\_selenium-webdriver@4.0.0-alpha.1@selenium-webdriver\\lib\\http.js:468:26)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
+        }
+      }
+    ]
+  }
+}
